@@ -1,0 +1,82 @@
+/* src/pages/ContactUs.css */
+
+.contact-form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+  color: #495e57;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  transition: border 0.3s ease; /* Smooth border transition */
+}
+
+/* Remove yellow cursor and outline on focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;  /* Removes the default outline */
+  cursor: text;   /* Ensures the cursor is text (I-beam) */
+  border: 1px solid #4CAF50; /* Optional: custom border color on focus */
+}
+
+/* Error messages for validation */
+small {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Styling for the submit button */
+.contact-form button {
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background-color: #f4ce14;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Disable button when form is invalid */
+.contact-form button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Hover effect for the submit button */
+.contact-form button:hover:not(:disabled) {
+  background-color: #e4bd13;
+}
+
+/* Add focus styles for better accessibility and usability */
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #f4ce14; 
+  box-shadow: #f4ce14;
+}
