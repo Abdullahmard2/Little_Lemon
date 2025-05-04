@@ -2,8 +2,8 @@
   background-color: #333;
   color: white;
   text-align: center;
-  display: flex; /* Enables flexbox layout */
-  justify-content: center; /* Horizontally centers all cards */
+  display: flex; 
+  justify-content: center; 
   justify-content: space-between;
   padding-left:20%;
   padding-right: 20%;

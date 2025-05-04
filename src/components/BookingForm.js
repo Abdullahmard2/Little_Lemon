@@ -12,7 +12,7 @@ function BookingForm({ availableTimes, dispatchDateChange, submitForm }) {
     const newDate = e.target.value;
     setDate(newDate);
     if (dispatchDateChange) {
-      dispatchDateChange(newDate); // Dispatch the date change to fetch available times
+      dispatchDateChange(newDate); 
     }
   };
 
@@ -20,8 +20,8 @@ function BookingForm({ availableTimes, dispatchDateChange, submitForm }) {
     e.preventDefault();
     const formData = { date, time, guests, occasion };
 
-    // Call submitForm and pass the form data
-    submitForm(formData); 
+   
+    submitForm(formData);
   };
 
   return (

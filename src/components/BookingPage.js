@@ -3,10 +3,10 @@ import React, { useReducer, useEffect } from 'react';
 import BookingForm from '../components/BookingForm';
 import { useNavigate } from 'react-router-dom';
 
-// Mock fetchAPI function (for testing)
+
 window.fetchAPI = (date) => {
   console.log('Fetching available times for date:', date);
-  // Return mock times for the selected date
+  
   return [
     '12:00 PM',
     '2:00 PM',
@@ -17,10 +17,10 @@ window.fetchAPI = (date) => {
 
 window.submitAPI = (formData) => {
   console.log('Form data submitted:', formData);
-  // Simulate a successful submission
+  
   return true;  // or false if you want to simulate a failure
 };
-// Reducer function for handling times state
+
 function updateTimes(state, action) {
   switch (action.type) {
     case 'INITIALIZE_TIMES':
@@ -34,7 +34,7 @@ function updateTimes(state, action) {
 
 function BookingPage() {
   const [availableTimes, dispatch] = useReducer(updateTimes, []);
-  const navigate = useNavigate();  // Hook to handle navigation
+  const navigate = useNavigate();  
 
   useEffect(() => {
     const today = new Date();
@@ -56,7 +56,7 @@ function BookingPage() {
     const success = window.submitAPI(formData);
 
     if (success) {
-      // Navigate to the booking confirmation page
+    
       navigate('/confirmed');
     } else {
       alert('Booking failed. Please try again.');

@@ -8,7 +8,7 @@ function ContactUs() {
     lastName: '',
     email: '',
     phone: '',
-    message: '', // Add message field to formData
+    message: '', 
   });
 
   const [touched, setTouched] = useState({});

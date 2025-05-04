@@ -32,25 +32,25 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-top: 0.5rem;
-  transition: border 0.3s ease; /* Smooth border transition */
+  transition: border 0.3s ease; 
 }
 
-/* Remove yellow cursor and outline on focus */
+
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: none;  /* Removes the default outline */
-  cursor: text;   /* Ensures the cursor is text (I-beam) */
-  border: 1px solid #4CAF50; /* Optional: custom border color on focus */
+  outline: none;  
+  cursor: text;   
+  border: 1px solid #4CAF50; 
 }
 
-/* Error messages for validation */
+
 small {
   color: red;
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
 
-/* Styling for the submit button */
+
 .contact-form button {
   margin-top: 2rem;
   padding: 0.75rem;
@@ -64,18 +64,18 @@ small {
   transition: background-color 0.3s ease;
 }
 
-/* Disable button when form is invalid */
+
 .contact-form button:disabled {
   background-color: #ddd;
   cursor: not-allowed;
 }
 
-/* Hover effect for the submit button */
+
 .contact-form button:hover:not(:disabled) {
   background-color: #e4bd13;
 }
 
-/* Add focus styles for better accessibility and usability */
+
 .contact-form input:focus, .contact-form textarea:focus {
   border-color: #f4ce14; 
   box-shadow: #f4ce14;

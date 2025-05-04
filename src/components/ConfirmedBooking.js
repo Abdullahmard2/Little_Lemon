@@ -1,6 +1,6 @@
 // src/pages/ConfirmedBooking.js
 import React from 'react';
-import './ConfirmedBooking.css'; // Import the CSS file for styling
+import './ConfirmedBooking.css'; 
 
 function ConfirmedBooking() {
   return (

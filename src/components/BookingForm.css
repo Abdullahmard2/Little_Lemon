@@ -9,8 +9,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* full viewport height */
-  width: 100vw;  /* full viewport width */
+  height: 100vh; 
+  width: 100vw;  
   background-color: #fefefe;
   padding: 1rem;
   box-sizing: border-box;
