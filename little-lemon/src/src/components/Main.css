@@ -1,0 +1,23 @@
+.main {
+  padding: 1%;
+  display: grid;
+  gap: 1%;
+}
+
+ .image-content img {
+    max-width: 100%; /* Ensures image scales responsively */
+    height: auto; /* Maintains aspect ratio of the image */
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column; /* Stacks text and image vertically on smaller screens */
+      align-items: center; /* Centers both elements horizontally when stacked */
+      text-align: center;
+    }
+  
+    .image-content img {
+      width: 80%; /* Adjusts image size for smaller screens (optional) */
+      margin-top: 10px;
+    }
+  }
