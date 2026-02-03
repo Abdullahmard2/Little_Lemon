@@ -8,16 +8,38 @@ function Nav() {
   return (
     <nav className="nav">
       <ul>
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="#">Menu</a></li>
-        <li><a href="/booking">Reservations</a></li>
-        <li><a href="/#Order Online">Order Online</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/contact">Contact us</a></li>
-        <li><a href="#">Login</a></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+
+        <li>
+          <Link to="/menu">Menu</Link>
+        </li>
+
+        <li>
+          <Link to="/booking">Reservations</Link>
+        </li>
+
+        <li>
+          <Link to="/order-online">Order Online</Link>
+        </li>
+
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+
+        <li>
+          <Link to="/contact">Contact us</Link>
+        </li>
+
+        <li>
+          <button className="nav-button">Login</button>
+        </li>
+
         <li className="login-cart">
-          <a href ="#"><FaShoppingCart className="cart-icon" /></a>
+          <Link to="/cart">
+            <FaShoppingCart className="cart-icon" />
+          </Link>
         </li>
       </ul>
     </nav>
