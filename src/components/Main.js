@@ -71,8 +71,9 @@ function Main() {
     </p>
   </div>
   <div className="about-images">
-  <img src="/assets/Mario and Adrian A.jpg" alt="Restaurant background" className="bg-image" />
-<img src="/assets/Mario and Adrian B.jpg" alt="Restaurant foreground" className="fg-image" />
+  <img src="/assets/Mario_and_Adrian_A.jpg" alt="Restaurant background" className="bg-image" />
+<img src="/assets/Mario_and_Adrian_B.jpg" alt="Restaurant foreground" className="fg-image" />
+
   </div>
 </section>
 
